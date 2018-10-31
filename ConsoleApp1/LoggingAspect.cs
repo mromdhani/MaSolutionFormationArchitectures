@@ -14,5 +14,10 @@ namespace ConsoleApp1
         {
             Console.WriteLine("Al entrée de la méthode");
         }
+
+        public void OnExit()
+        {
+            Console.WriteLine("Al entrée de la méthode");
+        }
     }
 }
