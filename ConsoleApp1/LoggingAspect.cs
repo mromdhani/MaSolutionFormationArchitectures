@@ -1,4 +1,4 @@
-﻿using PostSharp.Aspects;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 namespace ConsoleApp1
 {
    [Serializable]
-    class LoggingAspect : OnMethodBoundaryAspect
+    class LoggingAspect 
     {
-        public override void OnEntry(MethodExecutionArgs args)
+        public  void OnEntry()
         {
             Console.WriteLine("Al entrée de la méthode");
         }
